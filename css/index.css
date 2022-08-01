@@ -1,0 +1,662 @@
+/* GLOBAL */
+button, input[type='submit'] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dc143c;
+    color: white;
+    font-weight: 800;
+    
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;    
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+}
+
+.footerNav ul {
+    padding: 0;
+}
+
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+}
+
+a {
+    color: #dc143c;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .shrink:hover, .shrink:focus, .shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+
+
+
+
+/* BODY */
+@font-face {
+    font-family: "Satoshi";
+    src: url(../media/Satoshi.ttf);
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #181c23;
+    font-family: "Satoshi";
+}
+
+.main-body {
+    width: 80%;
+    margin: auto;
+}
+
+#section2{
+    margin-top:100px;
+}
+
+label, p ,span {
+    font-family: "Satoshi";
+    font-size: 18px;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.seperator {
+    margin-top: 40px;
+}
+
+
+
+.title {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 60px 0px 20px 0px;
+}
+
+.sub-title {
+    padding-bottom: 10px;
+    border-bottom: 0.1em solid white;
+}
+
+
+
+
+/* HOME PAGE */
+#homepage {
+    background-image: url(../media/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    
+}
+
+#loginPage {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#homepage .header, #loginPage .header, #registerPage .header {
+    max-width: 80%;
+}
+
+#current-user {
+    font-weight: bold;
+    color: white;
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    margin-top:10px;
+}
+
+.content1 div img {
+    border-radius: 10px;
+}
+
+.content1 h1 {
+    margin: 0;
+    color: white;
+    bottom: 40px;
+
+}
+
+.content3 {
+    background-color: #181c23;
+    margin: auto;
+    padding: 20px 0px 40px 0px;
+}
+
+.content3 iframe {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+.content3 iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* GAMES PAGE */
+.game {
+    border-radius: 20px;
+}
+
+.game-nav {
+    margin-top: 50px;
+    float: right;
+}
+
+.game-nav button {
+    background-color: #dc143c;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 2px;
+    width : 100px;
+}
+
+#favouriteBtn {
+    background-color: black;
+}
+
+#websiteBtn {
+    background-color: black;
+}
+
+table {
+    height: 500px;
+    color: white;
+
+}
+
+
+table td,
+th {
+    padding: 20px;
+}
+
+.screenshotSection {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.screenshotSection .content1 {
+    display: flex;
+    column-gap: 10px;
+}
+
+.screenshotSection .content1 img {
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FORM PAGE */
+
+.white {
+    color:white;
+}
+
+.form {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 25px;
+
+}
+
+.form-fields {
+    margin-top: 30px;
+}
+
+
+.form-fields input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+#form-submit {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 25px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SEARCH */
+#searchMainContent {
+    padding: 20px 0px;
+}
+table {
+    border: 1px solid white;
+    width: 100%;
+
+}
+
+table th {
+    background-color: #dc143c;
+}
+
+table tr td, th {
+    padding: 20px!important;
+}
+
+#gameSearchBar {
+    width: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+}
+
+#searchMainContent .output {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.singleGame {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.singleGame .gameTitle {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.singleGame img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+.singleGame2 {
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.singleGame2 .gameTitle {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.singleGame2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#gameDataTable {
+    height: unset;
+}
+
+#gameDataTable th {
+    display: block;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#gameDataTable td {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#gameName {
+    font-size: 38px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 80%;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-shadow: 0px 0px 10px black
+}
+
+#gameImage {
+    height: 350px;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gameBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: -1;
+    width: 100%;
+    padding: 0;
+}
+
+.gameDataSection {
+    margin-top: 275px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    margin-top:40px;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+}
+
+
+.footer div {
+    padding: 20px;
+}
+
+.footer h2,
+span {
+    color: white;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+
+}
+
+.footer ul {
+    list-style: none;
+}
+
+#social-media img {
+    height: 40px;
+    width: 40px;
+    margin: 0px 5px;
+}
+
+#news-field {
+    border-radius: 10px;
+    padding: 10px;
+    border: grey;
+    outline: none;
+}
+
+
+#footer-logo {
+    height:80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#copyright {
+    border-top: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT US PAGE */
+#contact-us label {
+    width: 100%;
+    color: white;
+    height: 100%;
+}
+
+#contact-us .row {
+    row-gap: 20px;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 20px;
+}
+
+#enquiry {
+    height: calc(100% - 27px);
+    min-height: 200px;
+}
+
+
+#contact-inf p {
+    color: white;
+}
+
+#contact-inf p span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* USER PAGE */
+#user-body {
+    margin-top:20px;
+    min-height:600px;
+}
+
+
+#user-change {
+    display: none;
+}
+
+
+.profile-btns {
+    margin-top:20px;
+    width : 100%;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    background-color: #dc143c;
+    color: white;
+}
+
+#user-icon {
+    width: 80%;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+}
+
+#editPhoto {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#goback {
+    background-color: black;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+/* LOGIN / REGISTER PAGE / RESET PAGE */
+#logError, #regError, #resetErr {
+    color: red;
+    margin-top:10px;
+    font-weight: bold;
+    display: block;
+}
+
+
+#registerPage {
+    background-image: url(../media/register.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    

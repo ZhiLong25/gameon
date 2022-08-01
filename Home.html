@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./scripts/index.js"></script>
+
+    <!-- Bootstrap + Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Home Page</title>
+</head>
+
+
+<body id="homepage">
+
+
+    <header class="header">
+        <a href="Home.html" class="logo"><img src="./media/Logo.png" class="logo"><span id="name">Game on!</span></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn" style="margin-bottom: 0;"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Search.html">Games</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li id="account"><a href="User.html">Account</a></li>
+
+            <div id="user-btns">
+                <button id="login-btn" onclick="toLogin()">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+
+        </ul>
+    </header>
+    <span class="main-body" id="current-user"></span>
+
+
+
+
+    <div id="main">
+        <div id="demo" class="carousel slide main-body seperator" style="margin-top: 40px;" data-ride="carousel">
+            <ul class="carousel-indicators" style="z-index: 2;">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="./media/homebanner.png" style="filter:brightness(0.5)">
+                    <div class="carousel-caption d-none d-md-block" style="bottom:50px;z-index: 2;">
+                        <h2>Browse our list of games now</h2>
+                        <button onclick="location.href='./Search.html';">Browse Games</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/ps5-banner.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/banner3.png">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+
+        <div>
+            <h1 class="title">Your Timezone</h1>
+            <h2 id="timeclock" class="text-center"></h2>
+        </div>
+
+        <div>
+            <h1 class="title">Top Games Right Now!</h1>
+            <div class="seperator main-body">
+                <div class="row">
+                    <div class="col-md-4 shrink" ><a href="./Games.html?id=622492"><img src="./media/forza.jpg"></a></div>
+                    <div class="col-md-4 shrink" id="fortnite"><a href="./games.html?id=47137"><img src="./media/fortnite.jpg"></a></div>
+                    <div class="col-md-4 shrink" id="pubg"><a href="./games.html?id=10142"><img src="./media/pubg.jpg"></a></div>
+                </div>
+            </div>
+
+
+            <div style="background: rgb(0,0,0);background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(24,28,35,1) 40%);">
+                <div class="main-body">
+                    <div class="row" id="section2">
+
+                        <div class="col-md-8">
+                            <h2>Finding A PS5 Might Get Easier This Year</h2>
+                            <span>
+                                If you've been looking for a PlayStation 5 but haven't been able to get one, 2022 could be
+                                your
+                                year.
+                                Sony has projected it will sell many millions more PlayStation 5 units in the current fiscal
+                                year, and this could be a sign that the company believes the chip shortages and other supply
+                                issues might improve,
+                                leading to more units being available to buy. Nothing is guaranteed, though.
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./media/ps5.jpg" id="ps5-picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content3">
+                <h1 class="title">Game picks</h1>
+                <div class="main-body seperator">
+                    <iframe id="embedvid" src="https://www.youtube.com/embed/0uav6zQKiMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./media/Logo.png" id="footer-logo" >
+                    <h3>Game On!</h3>
+                </div>
+                <div class="col-lg-4 footerNav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li id="Faccount"><a href="User.html">Account</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div id="social-media" class="col-lg-4">
+                    <h3>Social Media</h3>
+                    <a href="https://www.facebook.com"><img src="./media/Facebook.png"></a>
+                    <a href="https://www.instagram.com"><img src="./media/Instagram.png"></a>
+                    <a href="https://www.twitter.com"><img src="./media/Twitter.png"></a>
+
+                </div>
+
+
+            </div>
+            <div id="copyright">
+                <span>&copy; 2022 Game On!</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

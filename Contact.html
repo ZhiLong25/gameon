@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./scripts/index.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Contact Us Page</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./media/Logo.png" class="logo"><span id="name">Game on!</span></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn" style="margin-bottom: 0;"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Search.html">Games</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li id="account"><a href="User.html">Account</a></li>
+
+            <div id="user-btns">
+                <button id="login-btn" onclick="toLogin()">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+
+        </ul>
+    </header>
+    <span class="main-body" id="current-user"></span>
+
+    <div id="main">
+        <div class="container">
+            <div>
+                <h1 class="title">Contact us for any enquiries</h1>
+            </div>
+        </div>
+
+        <div class="main-body seperator">
+            <form action="https://formspree.io/f/xpznaqov" method="POST" id="contact-us">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <label for="contact-name">Name:
+                                <input name="Name" type="text" id="contact-name" placeholder="e.g John Doe" required>
+                            </label>
+                            <label for="contact-email">Email:
+                                <input name="Email" type="tel" id="contact-email" placeholder="example@gmail.com"
+                                    pattern="^\S+@\S+\.\S+$" title="Example: contoso@gameon.com" required>
+                            </label>
+                            <label for="contact-phone">Phone No.:
+                                <input name="Phone" type="tel" id="contact-phone" placeholder="91234567" required>
+                            </label>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="enquiry">Enquiries :
+                            <textarea name="Enquiry" id="enquiry" placeholder="Enter your enquiry here"
+                                required></textarea>
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" style="width: 100%; margin-top:40px;">
+            </form>
+        </div>
+
+        <div class="main-body seperator">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h2>Our contact information</h2>
+                        <div class="seperator" id="contact-inf">
+                            <p><span>Phone: </span>+65 9123 4567</p>
+                            <p><span>Email: </span>contactus@gameon.com</p>
+                            <p><span>Address: </span>9 Temasek Boulevard, #44-03 SUNTEC TOWER 2, Singapore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.192926267195!2d103.8590267!3d1.2956548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19de54ae16e178e8!2sSuntec%20Tower%202!5e0!3m2!1sen!2ssg!4v1658585645493!5m2!1sen!2ssg"
+                        width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./media/Logo.png" id="footer-logo">
+                    <h3>Game On!</h3>
+                </div>
+                <div class="col-lg-4 footerNav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li id="Faccount"><a href="User.html">Account</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div id="social-media" class="col-lg-4">
+                    <h3>Social Media</h3>
+                    <a href="https://www.facebook.com"><img src="./media/Facebook.png"></a>
+                    <a href="https://www.instagram.com"><img src="./media/Instagram.png"></a>
+                    <a href="https://www.twitter.com"><img src="./media/Twitter.png"></a>
+
+                </div>
+
+
+            </div>
+            <div id="copyright">
+                <span>&copy; 2022 Game On!</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

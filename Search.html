@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/index.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Search</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./media/Logo.png" class="logo"><span id="name">Game on!</span></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn" style="margin-bottom: 0;"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Search.html">Games</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li id="account"><a href="User.html">Account</a></li>
+
+            <div id="user-btns">
+                <button id="login-btn" onclick="toLogin()">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+
+        </ul>
+    </header>
+    <span class="main-body" id="current-user"></span>
+
+    <div id="main">
+        <div class="main-body">
+            <div id="searchMainContent">
+                <div class="searchbar">
+                    <h1>Search</h1>
+                    <input type="search" name="" id="gameSearchBar" placeholder="Search a game">
+                </div>
+                <div class="output">
+                    <!-- TEMPLATE -->
+                    <!-- <div class="singleGame">
+                        <img src="./media/fortnite.jpg">
+                        <label>Fortnite</label>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./media/Logo.png" id="footer-logo" >
+                    <h3>Game On!</h3>
+                </div>
+                <div class="col-lg-4 footerNav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li id="Faccount"><a href="User.html">Account</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div id="social-media" class="col-lg-4">
+                    <h3>Social Media</h3>
+                    <a href="https://www.facebook.com"><img src="./media/Facebook.png"></a>
+                    <a href="https://www.instagram.com"><img src="./media/Instagram.png"></a>
+                    <a href="https://www.twitter.com"><img src="./media/Twitter.png"></a>
+
+                </div>
+
+
+            </div>
+            <div id="copyright">
+                <span>&copy; 2022 Game On!</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

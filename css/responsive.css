@@ -1,0 +1,159 @@
+/* SMALL DEVICES */
+@media only screen and (max-width: 768px) {
+    /* General Page Element */
+    body {
+        margin-top:120px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    #user-icon {
+        width: 100%;
+        min-width: 200px;
+        min-height: 200px;
+    }
+    
+    #full-name {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .seperator {
+        margin-top: 20px;
+    }
+
+
+    #section2 {
+        margin-top:60px;
+    }
+
+    #section2 {
+        row-gap: 30px;
+    }
+
+    .title {
+        padding: 30px 0px 10px 0px;
+        margin: auto;
+        display: block;
+        width: 80%;
+    }
+
+    #current-user {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: none;
+    }
+    
+    label, p, span, a, button {
+        font-size: 16px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    .main-body .row {
+        row-gap: 20px;
+    }
+
+    .footer div {
+        padding: 20px 10px;
+    }
+
+
+    .form {
+        width: auto;
+        margin: auto;
+        box-sizing: border-box;
+        max-width: 80%;
+    }
+
+    #footer-logo {
+        height:60px;
+        width: 60px;
+    }
+
+    #profile-favourite {
+        margin-top: 40px;
+    }
+
+    .singleGame2 {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    .game-nav button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #name {
+        display: none;
+    }
+
+    .main-body {
+        margin-top: 40px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    label, p, span, a, button {
+        font-size: 14px;
+    }
+
+
+    #embedvid {
+        height: 150px;
+    }
+
+    .footerNav ul li a {
+        font-size: 14px;
+    }
+
+    #social-media img {
+        height:30px;
+        width: 30px;
+    }
+    .singleGame {
+        width: 75%;
+    }
+
+    .RssGrid {
+        display: block!important;
+    }
+
+}
+

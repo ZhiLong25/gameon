@@ -1,0 +1,219 @@
+.logo {
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+
+
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: larger;
+
+}
+
+.logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+.active {
+  color: red !important;
+}
+
+.header {
+  background-color: black;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  z-index: 3;
+  top: 0;
+  margin: auto;
+  border-radius: 10px;
+  padding: 0px 10px;
+  margin-top: 20px;
+  width: 80%;
+
+
+}
+
+
+
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #000000e0;
+}
+
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  display: block;
+  align-items: center;
+}
+
+
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 300px;
+  background-color: black;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+#login-btn {
+  padding: 10px 20px;
+  background-color: #dc143c;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.header .menu li {
+  background-color: black;
+}
+
+.header .menu li:hover a {
+  background-color: #1f1f1f
+}
+
+
+@media (min-width: 935px) {
+
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 18px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    display: flex;
+    background-color: black;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .menu li:hover {
+    background-color: grey;
+  }
+
+  #login-btn {
+    margin-left: 10px;
+  }
+}
+
+
+
+@media (max-width: 935px) {
+  body {
+    margin-top:120px;
+  }
+
+  #user-btns {
+    padding-bottom: 10px;
+    padding: 10px 0px;
+    float: right;
+  }
+
+  .header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    align-items: unset;
+  }
+
+  .header li a {
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+
+  #gameDataTable {
+    margin-top: 60px;
+  }
+}
